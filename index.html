@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote.Me</title>
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" 
+    rel="stylesheet">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Script-->
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <span>AdoteMe</span>
+        <nav>
+            <ul id="nav" class="nav-closed">
+                <li><a href="#" id="active">Home</a></li>
+                <li><a href="#">Cuidados com pet</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><button href="#" class="adopt-btn" onclick="clicou()">Adotar</button></li>
+            </ul>
+            <button id=menu-btn onclick="showMenu()"><i id="menu-icon" class="fa-solid fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="left-container">
+                <h1>
+                    O seu <span>amor</span> vale mais <br> que seu dinheiro, adote<span>.</span>
+                </h1>
+                <p>
+                    Seja um tutor de pet e transforme vidas!
+                </p>
+                <button class="adopt-btn" id="adopt-btn">Adote um pet</button>
+            </div><!--left-container-->
+            <div class="right-container">
+                <img src="assets/img/hero-img.svg" alt="gato em caixa de papelão">
+            </div><!--right-container-->
+        </section><!--hero-section-->
+    </main>
+
+</body>
+
+</html>

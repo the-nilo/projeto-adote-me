@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #ED2649;
+    --text-color: #1F1F1F;
+    --bg-color: #F5F5F5;
+}
+
+html, body {
+    background-color: var(--bg-color);
+}
+
+header {
+    background-color: var(--bg-color);
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px 0 80px;
+}
+
+header span {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+header nav ul {
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: var(--text-color);
+    opacity: 70%;
+    transition: .3s;
+}
+
+header nav ul li a:hover {
+    color: var(--primary-color);
+    opacity: 100%;
+}
+
+.adopt-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    padding: .7rem 2rem;
+    transition: .3s;
+}
+
+.adopt-btn:hover {
+    background-color: #8a0b22;
+    cursor: pointer;
+}
+
+#menu-btn {
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    font-size: 1.3rem;
+    display: none;
+    top: 14px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 40px 0 80px;
+}
+
+.left-container h1 {
+    color: var(--text-color);
+    font-size: 3rem;
+    line-height: 50px;
+    margin-bottom: 1rem;
+}
+
+.left-container span {
+    color: var(--primary-color);
+}
+
+.left-container p {
+    opacity: 70%;
+    margin-bottom: 2rem;
+}
+
+.left-container button {
+    font-size: 1.1rem;
+    /* padding: 12px 24px; */
+}
+
+.right-container img {
+    width: 600px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    header span {
+        font-size: 1.2rem;
+    }
+
+    header nav ul {
+        width: 540px;
+    }
+
+    header ul li {
+        font-size: .8rem;
+    }
+
+    header ul li button {
+        font-size: .8rem;
+    }
+    
+    .left-container h1 {
+        font-size: 2rem;
+        line-height: 30px;
+    }
+
+    .left-container p {
+        font-size: 1rem;
+    }
+
+    .left-container button {
+        font-size: .8rem;
+    }
+
+    .right-container img {
+        width: 400px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    header {
+        position: relative;
+        height: 3rem;
+        padding: 20px;
+    }
+
+    #menu-btn {
+        position: absolute;
+        display: flex;
+    }
+
+    header nav ul {
+        position: absolute;
+        background-color: var(--text-color);
+        width: fit-content;
+        flex-direction: column;
+        top: 10px;
+        right: 10px;
+        gap: 20px;
+        padding: 60px 20px 20px 20px ;
+        border-radius: 8px;
+        display: none;
+    }
+
+    header nav ul li a {
+        color: #fff;
+    }
+
+    header nav ul li .adopt-btn {
+        display: none;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+        padding: 60px;
+    }
+
+    .right-container img {
+        width: 20rem;
+        margin-bottom: 3rem;
+    }
+
+    .left-container {
+        text-align: center;
+    }
+
+    .left-container h1 {
+        width: 450px;
+        font-size: 2rem;
+    }
+
+    .left-container h1 > br {
+        display: none;
+    }
+}
+
+@media  screen and (max-width: 480px) {
+    header nav ul {
+        right: 10px;
+    }
+
+    #menu-btn {
+        right: 16px;
+    }
+
+    .hero-section {
+        padding: 60px;
+    }
+
+    .right-container img {
+        width: 14rem;
+    }
+
+    .left-container h1 {
+        width: 300px;
+        font-size: 1.2rem;
+    }
+
+    .left-container p {
+        font-size: .8rem;
+    }
+}
